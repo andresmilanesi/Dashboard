@@ -20,6 +20,7 @@ public class sideBarTool {
     // This is the function used to browse to advertiser form
     public void goToAdvertiserForm() {
         helpers helper = new helpers();
+        helper.waitForPageLoadComplete(driver, 40);
         helper.waitForElement(driver, advertiserTool);
         driver.findElement(advertiserTool).click();
         driver.findElement(newAdvertiserButton).click();

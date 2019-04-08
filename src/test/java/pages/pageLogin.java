@@ -2,7 +2,13 @@ package pages;
 
 import helpers.helpers;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
+import io.restassured.RestAssured;
+import io.restassured.http.Cookies;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class pageLogin {
     private WebDriver driver;
@@ -29,5 +35,6 @@ public class pageLogin {
         helper.waitForElement(driver, signinButton);
         driver.findElement(signinButton).click();
         System.out.print(" Login in...");
+
     }
 }

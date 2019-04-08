@@ -22,6 +22,7 @@ public class pageIOForm {
     public void completeIOForm(String name, String contactName, String contactEmail) {
         helpers helper = new helpers();
         helper.waitForPageLoadComplete(driver, 50);
+        helper.waitForElement(driver, nameField);
         driver.findElement(nameField).sendKeys(name);
         driver.findElement(contactNameField).sendKeys(contactName);
         driver.findElement(contactEmailField).sendKeys(contactEmail);

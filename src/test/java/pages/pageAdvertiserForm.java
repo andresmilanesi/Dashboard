@@ -16,6 +16,7 @@ public class pageAdvertiserForm {
     private By contactPhoneField;
     private By companyAddressField;
     private By createAdvertiserAndIOButton;
+    public static final String base_url = "https://managedev4genint1.altitude-arena.com/manage/advtsrs";
 
     public pageAdvertiserForm(WebDriver driver) {
         this.driver = driver;
@@ -35,6 +36,7 @@ public class pageAdvertiserForm {
     // This is the function used to complete and submit advertiser form
     public void createAdvertiser(String name, By pricing ,String contactName, String contactEmail, String contactPhone, String companyAddress) {
         helpers helper = new helpers();
+        helper.waitForPageLoadComplete(driver, 40);
         helper.waitForElement(driver, advertiserName);
         driver.findElement(advertiserName).sendKeys(name);
         driver.findElement(pricing).click();
