@@ -1,24 +1,26 @@
 package tests;
 
 import io.restassured.http.Cookies;
-import io.restassured.response.Response;
 import org.openqa.selenium.Cookie;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.Assert;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
+import java.net.MalformedURLException;
 
 import pages.*;
 import helpers.helpers;
-import io.restassured.RestAssured;
+
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
@@ -28,10 +30,17 @@ public class dashboardRegressionTest {
     // What we are going to run before tests execution.
     @BeforeMethod
 
-    public void setUp() {
-        DesiredCapabilities caps = new DesiredCapabilities();
-        System.setProperty("webdriver.chrome.driver", "/home/amilanesi/Work/Automation/chromedriver");
-        driver = new ChromeDriver();
+    public void setUp() throws MalformedURLException {
+// Local setup
+//        DesiredCapabilities caps = new DesiredCapabilities();
+//        System.setProperty("webdriver.chrome.driver", "/home/amilanesi/Work/Automation/chromedriver");
+//        driver = new ChromeDriver();
+// Docker setup
+        DesiredCapabilities caps = DesiredCapabilities.chrome();
+                            caps.setPlatform(Platform.LINUX);
+                            caps.setVersion("");
+        driver = new RemoteWebDriver(new URL("http://127.0.0.1:4545/wd/hub"),caps);
+
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
     }
@@ -58,12 +67,12 @@ public class dashboardRegressionTest {
                 "Andy Contact " + helpers.timestamp, "automatedAdvertiserContact@test.com",
                 "123456789", "Hello 123");
         // Complete new IO form and submit, user is taken to Campaign form.
-//        pageIOForm createIO = new pageIOForm(driver);
-//        createIO.completeIOForm("Automated IO " + helpers.timestamp, "Automated Contact",
-//                "automatedIOContact@test.com");
+        pageIOForm createIO = new pageIOForm(driver);
+        createIO.completeIOForm("Automated IO " + helpers.timestamp, "Automated Contact",
+                "automatedIOContact@test.com");
         // Complete campaign form and submit, user is taken to media form.
-//        pageCampaignForm createCamp = new pageCampaignForm(driver);
-//        createCamp.createCampaign("Automated Campaign " + helpers.timestamp, 10);
+        pageCampaignForm createCamp = new pageCampaignForm(driver);
+        createCamp.createCampaign("Automated Campaign " + helpers.timestamp);
         // Complete media form and submit, user is taken to
         helpers pause = new helpers();
         pause.pause(10000);
@@ -82,12 +91,29 @@ public class dashboardRegressionTest {
         // Validate Advertiser creation
         given().
                 when().
-                log().all().
                 cookies(new Cookies(restAssuredCookies)).
-                get(pageAdvertiserForm.base_url).
+                get(pageAdvertiserForm.advertiser_base_url).
                 then().
                 assertThat().statusCode(200).
                 body("name", hasItem("Automated Advertiser " + helpers.timestamp));
+
+        // Validate Insertion Order creation
+        given().
+                when().
+                cookies(new Cookies(restAssuredCookies)).
+                get(pageIOForm.io_base_url).
+                then().
+                assertThat().statusCode(200).
+                body("name", hasItem("Automated IO " + helpers.timestamp));
+
+        // Validate Campaign creation
+        given().
+                when().
+                cookies(new Cookies(restAssuredCookies)).
+                get(pageCampaignForm.campaign_base_url).
+                then().
+                assertThat().statusCode(200).
+                body("name", hasItem("Automated Campaign " + helpers.timestamp));
     }
 
 }

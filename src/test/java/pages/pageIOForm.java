@@ -10,6 +10,7 @@ public class pageIOForm {
     private By contactNameField;
     private By contactEmailField;
     private By createAndCampaignButton;
+    public static final String io_base_url = "https://managedev3genint1.altitude-arena.com/manage/insertion-orders";
 
     public pageIOForm(WebDriver driver) {
         this.driver = driver;
@@ -21,12 +22,11 @@ public class pageIOForm {
 
     public void completeIOForm(String name, String contactName, String contactEmail) {
         helpers helper = new helpers();
-        helper.waitForPageLoadComplete(driver, 50);
+        helper.pause(4000);
         helper.waitForElement(driver, nameField);
         driver.findElement(nameField).sendKeys(name);
         driver.findElement(contactNameField).sendKeys(contactName);
         driver.findElement(contactEmailField).sendKeys(contactEmail);
-        helper.waitForElementClickable(driver, createAndCampaignButton);
         driver.findElement(createAndCampaignButton).click();
         System.out.print(" Completed IO form, moving to campaign form.");
     }

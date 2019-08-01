@@ -2,13 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a380145-beb3-4aa7-9f0d-645132ef7316" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/helpers/urlFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/nativeLinkTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automated Dashboard.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Column6 Automation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/helpers/helpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helpers/helpers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/pageAdvertiserForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/pageAdvertiserForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/pageCampaignForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/pageCampaignForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/pageIOForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/pageIOForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/pageLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/pageLogin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/sideBarTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/sideBarTool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/dashboardRegressionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/dashboardRegressionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-tests.dashboardRegressionTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-tests.dashboardRegressionTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
@@ -17,12 +24,18 @@
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/tests.dashboardRegressionTest/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/tests.dashboardRegressionTest/methods-alphabetical.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/tests.dashboardRegressionTest/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/tests.dashboardRegressionTest/methods.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/tests.dashboardRegressionTest/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/tests.dashboardRegressionTest/toc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/tests.dashboardRegressionTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/tests.dashboardRegressionTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/tests.dashboardRegressionTest/Command line test.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/tests.dashboardRegressionTest/Command line test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/tests.dashboardRegressionTest/Command line test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/tests.dashboardRegressionTest/Command line test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/tests.dashboardRegressionTest/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/tests.dashboardRegressionTest/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/helpers/helpers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/helpers/helpers.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/pages/pageAdvertiserForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/pageAdvertiserForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/pageCampaignForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/pageCampaignForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/pageIOForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/pageIOForm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/pages/pageLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/pageLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/sideBarTool.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/sideBarTool.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/tests/dashboardRegressionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/dashboardRegressionTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -38,8 +51,41 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/dashboardRegressionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+            <state relative-caret-position="436">
+              <caret line="51" column="23" lean-forward="true" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/nativeLinkTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="735">
+              <caret line="49" column="27" lean-forward="true" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/helpers/urlFormatter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/helpers/helpers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,8 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pages/pageLogin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+            <state relative-caret-position="720">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,8 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pages/pageCampaignForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="39" column="60" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="60" />
+            <state relative-caret-position="510">
+              <caret line="34" column="50" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,8 +120,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pages/pageAdvertiserForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" column="51" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
+            <state relative-caret-position="240">
+              <caret line="18" column="115" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="115" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,8 +132,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pages/pageIOForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
+            <state relative-caret-position="150">
+              <caret line="12" column="116" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="116" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,32 +144,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pages/sideBarTool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
+            <state relative-caret-position="300">
+              <caret line="22" column="54" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/helpers/helpers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="49" column="73" selection-start-line="49" selection-start-column="73" selection-end-line="49" selection-end-column="73" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="43" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -140,6 +165,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>list-group-item j-advertiser-section wide-only-block</find>
+      <find>driver</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -148,7 +174,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/dashboard_regression.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/dashboard_regression.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/dashboardRegression.java" />
@@ -157,13 +182,16 @@
         <option value="$PROJECT_DIR$/src/test/java/pages/pageIO.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/pageAdvertiser.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/pageCampaingForm.java" />
-        <option value="$PROJECT_DIR$/src/test/java/helpers/helpers.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/pageCampaignForm.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/pageLogin.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/sideBarTool.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/pageAdvertiserForm.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/pageIOForm.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/pageCampaignForm.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/pageLogin.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/dashboardRegressionTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/nativeLinkTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/helpers/helpers.java" />
+        <option value="$PROJECT_DIR$/src/test/java/helpers/urlFormatter.java" />
       </list>
     </option>
   </component>
@@ -174,69 +202,79 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="-2" />
     <option name="width" value="1920" />
     <option name="height" value="1082" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="Column6 Automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Column6 Automation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="Column6 Automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Column6 Automation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="Column6 Automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Column6 Automation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="Column6 Automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Column6 Automation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="Column6 Automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Column6 Automation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="helpers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="Column6 Automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Column6 Automation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Column6 Automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Column6 Automation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554739822015" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Column6/altitudedigital" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559230493944" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -264,10 +302,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-2" width="1920" height="1082" extended-state="7" />
-    <editor active="true" />
+    <frame x="0" y="-2" width="1920" height="1082" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26307365" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2054429" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -316,57 +353,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/pageCampaignForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="39" column="60" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/target/surefire-reports/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Column6 Automation.iml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/pageLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/sideBarTool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/helpers/helpers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="49" column="73" selection-start-line="49" selection-start-column="73" selection-end-line="49" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="960">
+          <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/pageAdvertiserForm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="51" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
+        <state relative-caret-position="240">
+          <caret line="18" column="115" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="115" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -375,8 +378,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/pageIOForm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
+        <state relative-caret-position="150">
+          <caret line="12" column="116" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="116" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/sideBarTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="54" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/nativeLinkTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="27" lean-forward="true" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/pageCampaignForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="50" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/helpers/urlFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/helpers/helpers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/pageLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -385,8 +445,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/dashboardRegressionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+        <state relative-caret-position="436">
+          <caret line="51" column="23" lean-forward="true" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

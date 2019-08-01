@@ -8,6 +8,7 @@
           <include name="assertAdvertiserCreation"/>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="demandFlowTest"/>
         </methods>
       </class> <!-- tests.dashboardRegressionTest -->
     </classes>

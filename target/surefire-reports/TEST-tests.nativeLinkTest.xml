@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="tests.dashboardRegressionTest" time="41.139" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="tests.nativeLinkTest" time="31.444" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
-    <property name="java.vm.version" value="25.191-b12"/>
+    <property name="java.vm.version" value="25.212-b03"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/amilanesi/Work/Automation/Column6/Dashboard"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/amilanesi/Work/Automation/Column6/Column6 Automation"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -14,10 +14,10 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
-    <property name="test" value="dashboardRegressionTest"/>
+    <property name="test" value="nativeLinkTest"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/amilanesi/Work/Automation/Column6/Dashboard"/>
-    <property name="java.runtime.version" value="1.8.0_191-8u191-b12-2ubuntu0.18.04.1-b12"/>
+    <property name="user.dir" value="/home/amilanesi/Work/Automation/Column6/Column6 Automation"/>
+    <property name="java.runtime.version" value="1.8.0_212-8u212-b03-0ubuntu1.18.04.1-b03"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
     <property name="os.arch" value="amd64"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="4.15.0-47-generic"/>
+    <property name="os.version" value="4.15.0-50-lowlatency"/>
     <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
     <property name="user.home" value="/home/amilanesi"/>
     <property name="user.timezone" value="America/Argentina/Buenos_Aires"/>
@@ -45,12 +45,12 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dtest=dashboardRegressionTest"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dtest=nativeLinkTest"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_191"/>
+    <property name="java.version" value="1.8.0_212"/>
     <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
     <property name="securerandom.source" value="file:/dev/./urandom"/>
     <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
@@ -63,6 +63,9 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="tests.dashboardRegressionTest" name="demandFlowTest" time="22.641"/>
-  <testcase classname="tests.dashboardRegressionTest" name="assertAdvertiserCreation" time="18.498"/>
+  <testcase classname="tests.nativeLinkTest" name="setUp" time="10.429"/>
+  <testcase classname="tests.nativeLinkTest" name="getActiveAdvertiserID" time="11.004"/>
+  <testcase classname="tests.nativeLinkTest" name="getInsertionOrderID" time="4.052"/>
+  <testcase classname="tests.nativeLinkTest" name="getCampaignID" time="5.838"/>
+  <testcase classname="tests.nativeLinkTest" name="tearDown" time="0.121"/>
 </testsuite>

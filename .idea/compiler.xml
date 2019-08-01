@@ -6,7 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Automated Dashboard" />
+        <module name="Column6 Automation" />
+        <module name="Dashboard" />
       </profile>
     </annotationProcessing>
   </component>

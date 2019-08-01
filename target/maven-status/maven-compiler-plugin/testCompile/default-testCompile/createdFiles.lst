@@ -3,5 +3,7 @@ pages/pageAdvertiserForm.class
 tests/dashboardRegressionTest.class
 pages/sideBarTool.class
 pages/pageCampaignForm.class
+tests/nativeLinkTest.class
 pages/pageIOForm.class
+helpers/urlFormatter.class
 helpers/helpers.class
