@@ -33,11 +33,11 @@ public class dashboardRegressionTest {
     @BeforeMethod
 
     public void setUp() throws MalformedURLException {
-// Local setup
+    // Local setup
         DesiredCapabilities caps = new DesiredCapabilities();
         System.setProperty("webdriver.chrome.driver", configFileReader.getDriverPath());
         driver = new ChromeDriver();
-// Docker setup
+    // Docker setup
 //        DesiredCapabilities caps = DesiredCapabilities.chrome();
 //                            caps.setPlatform(Platform.LINUX);
 //                            caps.setVersion("");
