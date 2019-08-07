@@ -20,26 +20,28 @@ import java.net.MalformedURLException;
 
 import pages.*;
 import helpers.helpers;
+import dataProviders.*;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
 public class dashboardRegressionTest {
     private WebDriver driver;
+    private configFileReader configFileReader= new configFileReader();
 
     // What we are going to run before tests execution.
     @BeforeMethod
 
     public void setUp() throws MalformedURLException {
 // Local setup
-//        DesiredCapabilities caps = new DesiredCapabilities();
-//        System.setProperty("webdriver.chrome.driver", "/home/amilanesi/Work/Automation/chromedriver");
-//        driver = new ChromeDriver();
+        DesiredCapabilities caps = new DesiredCapabilities();
+        System.setProperty("webdriver.chrome.driver", configFileReader.getDriverPath());
+        driver = new ChromeDriver();
 // Docker setup
-        DesiredCapabilities caps = DesiredCapabilities.chrome();
-                            caps.setPlatform(Platform.LINUX);
-                            caps.setVersion("");
-        driver = new RemoteWebDriver(new URL("http://127.0.0.1:4545/wd/hub"),caps);
+//        DesiredCapabilities caps = DesiredCapabilities.chrome();
+//                            caps.setPlatform(Platform.LINUX);
+//                            caps.setVersion("");
+//        driver = new RemoteWebDriver(new URL("http://127.0.0.1:4545/wd/hub"),caps);
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
@@ -74,8 +76,6 @@ public class dashboardRegressionTest {
         pageCampaignForm createCamp = new pageCampaignForm(driver);
         createCamp.createCampaign("Automated Campaign " + helpers.timestamp);
         // Complete media form and submit, user is taken to
-        helpers pause = new helpers();
-        pause.pause(10000);
     }
 
     @Test(priority=2)

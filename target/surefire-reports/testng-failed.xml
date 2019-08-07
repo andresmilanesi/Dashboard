@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="0" name="Failed suite [tests.nativeLinkTest]">
+<suite verbose="0" name="Failed suite [tests.dashboardRegressionTest]">
   <test thread-count="5" verbose="0" name="Command line test(failed)">
     <classes>
-      <class name="tests.nativeLinkTest">
+      <class name="tests.dashboardRegressionTest">
         <methods>
-          <include name="getInsertionOrderID"/>
+          <include name="assertAdvertiserCreation"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="getActiveAdvertiserID"/>
-          <include name="getCampaignID"/>
+          <include name="demandFlowTest"/>
         </methods>
-      </class> <!-- tests.nativeLinkTest -->
+      </class> <!-- tests.dashboardRegressionTest -->
     </classes>
   </test> <!-- Command line test(failed) -->
-</suite> <!-- Failed suite [tests.nativeLinkTest] -->
+</suite> <!-- Failed suite [tests.dashboardRegressionTest] -->

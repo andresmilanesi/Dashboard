@@ -1,6 +1,7 @@
 pages/pageLogin.class
 pages/pageAdvertiserForm.class
 tests/dashboardRegressionTest.class
+dataProviders/configFileReader.class
 pages/sideBarTool.class
 pages/pageCampaignForm.class
 tests/nativeLinkTest.class

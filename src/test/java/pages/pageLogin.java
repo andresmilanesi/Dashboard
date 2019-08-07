@@ -1,5 +1,6 @@
 package pages;
 
+import dataProviders.configFileReader;
 import helpers.helpers;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;
@@ -14,8 +15,7 @@ public class pageLogin {
     private By userField;
     private By passField;
     private By signinButton;
-    // This aims to QA4 env
-    private static final String base_url = "https://managedev3genint1.altitude-arena.com/login";
+    private dataProviders.configFileReader configFileReader= new configFileReader();
 
     public pageLogin(WebDriver driver) {
         this.driver = driver;
@@ -26,7 +26,7 @@ public class pageLogin {
 
     // This is the login function
     public void login(String user, String pass) {
-        driver.navigate().to(base_url);
+        driver.navigate().to(configFileReader.getEnvironmentUrl());
         helpers helper = new helpers();
         helper.waitForElement(driver, userField);
         driver.findElement(userField).sendKeys(user);
@@ -36,6 +36,7 @@ public class pageLogin {
 
     }
 
+    // This function is used to store the session cookies
     public List getCookies() {
         Set<Cookie> seleniumCookies = driver.manage().getCookies();
         List restAssuredCookies = new ArrayList();

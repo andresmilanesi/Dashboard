@@ -9,6 +9,7 @@
           <include name="setUp"/>
           <include name="getActiveAdvertiserID"/>
           <include name="getCampaignID"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- tests.nativeLinkTest -->
     </classes>
