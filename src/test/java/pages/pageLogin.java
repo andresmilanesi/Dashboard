@@ -24,13 +24,13 @@ public class pageLogin {
         signinButton = By.cssSelector("button[type='submit']");
     }
 
-    // This is the login function
-    public void login(String user, String pass) {
+    // This function is used to login into the app with user and password provided in configuration file
+    public void login() {
         driver.navigate().to(configFileReader.getEnvironmentUrl());
         helpers helper = new helpers();
         helper.waitForElement(driver, userField);
-        driver.findElement(userField).sendKeys(user);
-        driver.findElement(passField).sendKeys(pass);
+        driver.findElement(userField).sendKeys(configFileReader.getUser());
+        driver.findElement(passField).sendKeys(configFileReader.getPassword());
         driver.findElement(signinButton).click();
         System.out.print(" Login in...");
 

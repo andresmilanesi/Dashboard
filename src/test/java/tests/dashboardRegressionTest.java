@@ -59,7 +59,7 @@ public class dashboardRegressionTest {
     @Test(priority=1)
     public void demandFlowTest() {
         pageLogin login = new pageLogin(driver);
-        login.login("amilanesi@sparkdigital.com", "Jueves197");
+        login.login();
         // Go to new advertiser form.
         sideBarTool create = new sideBarTool(driver);
         create.goToAdvertiserForm();
@@ -75,13 +75,16 @@ public class dashboardRegressionTest {
         // Complete campaign form and submit, user is taken to media form.
         pageCampaignForm createCamp = new pageCampaignForm(driver);
         createCamp.createCampaign("Automated Campaign " + helpers.timestamp);
-        // Complete media form and submit, user is taken to
+        // Complete media form and submit.
+        pageMediaForm createMedia = new pageMediaForm(driver);
+        createMedia.createMedia("Automated Media " + helpers.timestamp, 5,
+                "Automated Creative " + helpers.timestamp);
     }
 
     @Test(priority=2)
     public void assertAdvertiserCreation() {
         pageLogin login = new pageLogin(driver);
-        login.login("amilanesi@sparkdigital.com", "Jueves197");
+        login.login();
         // Store session cookies
         Set<Cookie> seleniumCookies = driver.manage().getCookies();
         List restAssuredCookies = new ArrayList();

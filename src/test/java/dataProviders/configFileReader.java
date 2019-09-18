@@ -40,4 +40,16 @@ public class configFileReader {
         else throw new RuntimeException("url not specified in the Configuration.properties file.");
     }
 
+    public String getUser() {
+        String user = properties.getProperty("user");
+        if(user != null) return user;
+        else throw new RuntimeException("user not specified in the Configuration.properties file.");
+    }
+
+    public String getPassword() {
+        String password = properties.getProperty("password");
+        if(password != null) return password;
+        else throw new RuntimeException("password not specified in the Configuration.properties file.");
+    }
+
 }

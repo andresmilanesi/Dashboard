@@ -1,3 +1,4 @@
+pages/pageMediaForm.class
 pages/pageLogin.class
 pages/pageAdvertiserForm.class
 tests/dashboardRegressionTest.class

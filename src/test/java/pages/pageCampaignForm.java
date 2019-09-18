@@ -29,10 +29,11 @@ public class pageCampaignForm {
 
     public void createCampaign(String name) {
         helpers helper = new helpers();
-        helper.pause(4000);
+        helper.pause(8000);
         helper.waitForElement(driver, campaingNameField);
         driver.findElement(campaingNameField).sendKeys(name);
-        driver.findElement(openGoalRadio).click();;
+        driver.findElement(openGoalRadio).click();
         driver.findElement(createAndMediaButton).click();
+        System.out.print(" Created a Campaign and moving to Media form.");
     }
 }

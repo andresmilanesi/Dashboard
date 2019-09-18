@@ -33,7 +33,7 @@ public class nativeLinkTest {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         // Login is part of the requirements to run every request
         pageLogin login = new pageLogin(driver);
-        login.login("amilanesi@sparkdigital.com", "Jueves197");
+        login.login();
     }
 
     @Test(priority = 2)
